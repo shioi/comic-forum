@@ -1,0 +1,120 @@
+body
+{
+    margin: 45px
+}
+
+h2 {
+    background-color: #003366;
+    color: white;
+}
+
+.nav-bar {
+    background-color: #003366;
+    padding: 20px;
+    margin: 30px;
+}
+
+.nav-bar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-bar a:hover {
+  background-color: #2382e1;
+}
+
+.nav-bar input {
+    float: right;
+    padding: 5px 5px;
+}
+
+#login {
+    float: right;
+    padding: 10x 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.side {
+    float: left;
+    margin: 20px;
+    border: 2px;
+}
+
+.content {
+    text-decoration: none;
+    margin: 30px;
+    padding: 20px;
+    float: left;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.cover {
+    width:200px;
+    height:300px;
+}
+
+.description>.title
+{
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.description>.author{
+    color: #555555;
+    font-size: 20px;
+}
+
+.tags>.tag-val {
+    background-color:  #999999;
+    color: white;
+    font-size:15px;
+}
+
+.img-map img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: salmon;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid black;
+    
+}
+
+caption {
+    font-style: italic;
+    padding: 5px;
+}
+
+tr,
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+thead tr td span {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
