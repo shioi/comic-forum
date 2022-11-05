@@ -118,3 +118,11 @@ thead tr td span {
     display: block;
     text-align: center;
 }
+
+.img-map {
+    width: 800px;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
