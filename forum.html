@@ -19,14 +19,37 @@
 	
 	<h1 id="Heading">Forum</h1>
 
-	<canvas id="myCanvas" width="500" height="100" >
-</canvas> 
+	<canvas id="myCanvas" width="500" height="100" />
+</canvas>
+
+<button onClick="getLocation()"> Find your current location </button>
+<span> <strong>Your Location</strong> </span>
+<p class="current-location"> </p>
+
+<script>
+ var c = document.getElementById("myCanvas");
+ var ctx = c.getContext("2d");
+ ctx.font = "30px Arial";
+ ctx.fillText("Welcome To Forum", 10, 50);
+
+  //location
+ var x = document.getElementById("current-location");
+ function getLocation () {
+     if (navigator.geolocation) {
+	 navigator.geolocation.getCurrentPosition(showPosition);
+     }
+     else {
+	 x.innerHTML = "Not supported by the browser";
+     }
+ }
+
+ function showPositon(position) {
+     x.innerHTML = position.coords.latitude
+		 + "<br>" + position.coords.longitude;
+ }
+</script> 
+
+
   </body>
 </html>
 
-<script>
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  ctx.font = "30px Arial";
-  ctx.fillText("Welcome To Forum", 10, 50);
-</script> 

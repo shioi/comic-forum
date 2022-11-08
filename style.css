@@ -137,3 +137,36 @@ thead tr td span {
 }
 
 
+
+.top-content-comic {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+img.cover-image {
+    width: 80%;
+}
+
+.desc-vid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+}
+
+.description {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    flex: 1;
+}
+
+.video-berserk {
+    flex: 1;
+    margin: 10px;
+    width: 500px;
+}
+
