@@ -1,6 +1,7 @@
 body
 {
-    margin: 45px
+    margin: 45px;
+    background-color: #ADD8E6;
 }
 
 h2 {
@@ -8,10 +9,18 @@ h2 {
     color: white;
 }
 
+.logo-img {
+    position:absolute;
+    left:300px;
+    top:-25px;
+    margin: 0px 10px 15px 0px;
+    width: 150px;
+}
+
 .nav-bar {
     background-color: #003366;
     padding: 20px;
-    margin: 30px;
+    margin: 50px;
 }
 
 .nav-bar a {
@@ -127,6 +136,4 @@ thead tr td span {
     margin-right: auto;
 }
 
-body {
-    background-color: #ADD8E6;
-}
+
