@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<comiclist xmlns="http://NamespaceTest.com/CommonTypes"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="https://www.w3schools.com comic_action.xsd">
+<?xml-stylesheet href="comic-action.xsl" type="text/xsl"?>
 
+<!--<comiclist xmlns="http://NamespaceTest.com/CommonTypes"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com comic_action.xsd"> -->
+
+<comiclist> 
   <comic type="Seinen">
     <name>Berserk </name>
     <Volume_Number>20 </Volume_Number>
@@ -20,7 +23,7 @@ xsi:schemaLocation="https://www.w3schools.com comic_action.xsd">
     <status>Ongoing</status>
   </comic>
 
-  <comic type="Shonen">
+  <comic type="Shounen">
     <name>One Piece </name>
     <Volume_Number>90 </Volume_Number>
     <Chapter_Number>980 </Chapter_Number>
@@ -50,7 +53,7 @@ xsi:schemaLocation="https://www.w3schools.com comic_action.xsd">
     <status>Finished</status>
   </comic>
 
-  <comic type="Shoenen">
+  <comic type="Shounen">
     <name> Slam Dunk </name>
     <Volume_Number>32 </Volume_Number>
     <Chapter_Number>276</Chapter_Number>
