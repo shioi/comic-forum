@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comiclist xmlns="http://NamespaceTest.com/CommonTypes"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com comic_action.xsd">
+
+  <comic type="Seinen">
+    <name>Berserk </name>
+    <Volume_Number>20 </Volume_Number>
+    <Chapter_Number>290 </Chapter_Number>
+    <Authors>
+      <Author_Name>Miura Kentarou </Author_Name>
+      <Author_Name>Studio Gaga </Author_Name>
+    </Authors>
+    <Tags number_of_tags = "3">
+      <tag>Adventure </tag>
+      <tag>Fantasy </tag>
+      <tag>Horror </tag>
+    </Tags>
+    <status>Ongoing</status>
+  </comic>
+
+  <comic type="Shonen">
+    <name>One Piece </name>
+    <Volume_Number>90 </Volume_Number>
+    <Chapter_Number>980 </Chapter_Number>
+    <Authors>
+      <Author_Name>Oda Eiichiro </Author_Name>
+    </Authors>
+    <Tags number_of_tags = "3">
+      <tag>Action </tag>
+      <tag>Adventure </tag>
+      <tag>Fantasy </tag>
+    </Tags>
+    <status>Ongoing</status>
+  </comic>
+
+  <comic type="Seinen">
+    <name> Vagabond </name>
+    <Volume_Number>37 </Volume_Number>
+    <Chapter_Number>327 </Chapter_Number>
+    <Authors>
+      <Author_Name>Takehiko Inoue </Author_Name>
+      <Author_Name>Yoshikawa Eiji </Author_Name>  
+    </Authors>
+    <Tags number_of_tags = "2">
+      <tag>Historical </tag>
+      <tag>Samurai </tag>
+    </Tags>
+    <status>Finished</status>
+  </comic>
+
+  <comic type="Shoenen">
+    <name> Slam Dunk </name>
+    <Volume_Number>32 </Volume_Number>
+    <Chapter_Number>276</Chapter_Number>
+    <Authors>
+      <Author_Name>Takehiko Inoue </Author_Name>
+    </Authors>
+    <Tags number_of_tags = "3">
+      <tag>Sports </tag>
+      <tag>School</tag>
+      <tag>Team</tag> 
+    </Tags>
+    <status>Finished</status>
+  </comic>31
+
+  <comic type="Seinen">
+    <name> Grand Blue </name>
+    <Volume_Number>0 </Volume_Number>
+    <Chapter_Number>0</Chapter_Number>
+    <Authors>
+      <Author_Name>Grand Blue</Author_Name>
+    </Authors>
+    <Tags number_of_tags = "1">
+      <tag>Comedy</tag>
+    </Tags>
+    <status>Ongoing</status>
+  </comic>
+</comiclist>

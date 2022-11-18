@@ -1,0 +1,16 @@
+<!-- Defining Elements-->
+<!-- Action comics-->
+<!ELEMENT comiclist (comic*)>
+<!ELEMENT comic (name,Volume_Number, Chapter_Number, Authors, Tags)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT Volume_Number (#PCDATA)>
+<!ELEMENT Chapter_Number (#PCDATA)>
+<!ELEMENT Authors (Author_Name*)>
+<!ELEMENT Author_Name (#PCDATA)>
+<!ELEMENT Tags (tag*)>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+
+
+<!ATTLIST comic type CDATA #REQUIRED >
+<!ATTLIST Tags number_of_tags CDATA #REQUIRED>
