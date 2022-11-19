@@ -15,10 +15,11 @@ xsi:schemaLocation="https://www.w3schools.com comic_action.xsd"> -->
       <Author_Name>Miura Kentarou </Author_Name>
       <Author_Name>Studio Gaga </Author_Name>
     </Authors>
-    <Tags number_of_tags = "3">
+    <Tags number_of_tags = "4">
       <tag>Adventure </tag>
       <tag>Fantasy </tag>
       <tag>Horror </tag>
+      <tag>Action</tag>
     </Tags>
     <status>Ongoing</status>
   </comic>
