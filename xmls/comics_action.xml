@@ -80,5 +80,17 @@ xsi:schemaLocation="https://www.w3schools.com comic_action.xsd"> -->
       <tag>Comedy</tag>
     </Tags>
     <status>Ongoing</status>
+   <comic type="Seinen">
+    <name> Grand Blue </name>
+    <Volume_Number>0 </Volume_Number>
+    <Chapter_Number>0</Chapter_Number>
+    <Authors>
+      <Author_Name>Grand Blue</Author_Name>
+    </Authors>
+    <Tags number_of_tags = "1">
+      <tag>Comedy</tag>
+    </Tags>
+    <status>Ongoing</status>
   </comic>
+ </comic>
 </comiclist>
