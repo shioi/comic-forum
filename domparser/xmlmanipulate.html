@@ -17,7 +17,7 @@
 		<td>Tag</td>
 			</tr>
 
-	<tbody id="demo"></tbody>
+	<tbody id="bdy"></tbody>
 	<tbody id="dynamic_field1"></tbody>
 </table>
 <button type="button" name="add1" id="add1" class="btn btn-success" onclick="add()">Add More</button>
@@ -26,7 +26,6 @@
 <script>
 	var tab="";
 var a=0;
-var b=0;
 function loadXMLDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -34,21 +33,19 @@ function loadXMLDoc() {
     	parser = new DOMParser();
 xmlDoc = parser.parseFromString(this.responseText,"text/xml");
 
-for(var a=0;xmlDoc.getElementsByTagName("comicid")[a].childNodes[0].nodeValue!=null;a++)
-{
-b++;
-
-document.getElementById("demo").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
-xmlDoc.getElementsByTagName("comicid")[a].childNodes[0]
-.nodeValue+"></td><td><input type='text' value="
-	+xmlDoc.getElementsByTagName("name")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Authors")[a]
-		.childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Tags")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove(id)>X</button></td></tr>";
-     
-      }
+	for(var a=0;xmlDoc.getElementsByTagName("comicid")[a].childNodes[0].nodeValue!=null;a++)
+	{
+		document.getElementById("bdy").innerHTML +="<tr id=row"+a+"><td><input type='number' value="+
+	xmlDoc.getElementsByTagName("comicid")[a].childNodes[0]
+	.nodeValue+"></td><td><input type='text' value="
+		+xmlDoc.getElementsByTagName("name")[a].childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Authors")[a]
+			.childNodes[0].nodeValue+"></td><td><input type='text' value="+xmlDoc.getElementsByTagName("Tags")[a].childNodes[0].nodeValue+"></td><td><button type=button name=remove id="+a+" class=btn btn-danger btn_remove1 onclick=remove(id)>X</button></td></tr>";
+		
+		}
 
 
-    }
-  };
+		}
+	};
   xhttp.open("GET", "comics_action.xml", true);
   xhttp.send();
 }
@@ -57,7 +54,7 @@ function remove(id)
 	document.getElementById("row"+id).remove();
 }
 function add()
-{b++;
+{
 document.getElementById("dynamic_field1").innerHTML+="<tr id=row"+b+"><td><input type='number'></td><td><input type='text'></td><td><input type='text'></td><td><input type='text'></td><td><button type=button name=remove id="+b+" class=btn btn-danger btn_remove1 onclick=remove(id)>X</button></td> </tr>";
 }
 
