@@ -24,7 +24,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <th>Tags</th>
                 </tr>
                 <xsl:for-each select="comic">
-                <xsl:sort select="status"/>       
+                <xsl:sort select="Tags/tag"/>       
                 <tr>
                     
                     <td><xsl:value-of select="name"/></td>

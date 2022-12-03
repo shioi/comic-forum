@@ -1,0 +1,90 @@
+body {
+    background-image: url(../images/bg.jpg);
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
+    box-shadow: 0px 3px rgb(87, 79, 79);
+    opacity: 0.8;
+}
+
+.header h1 {
+    color: pink;
+    padding-left: 30px;
+}
+
+.header h3 {
+    color: rebeccapurple;
+    padding-left: 30px;
+}
+
+.main {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+    min-width: 70%;
+    opacity: 0.8;
+    max-width: 0%;
+    margin: auto;
+}
+
+.main-header {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    border-bottom: 1px solid blue ;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.main-form label {
+    display: inline-block;
+    width: 150px;
+}
+
+.main-form input {
+    margin: 10px;
+}
+
+.sign-up {
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    min-width: 70%;
+    
+}
+
+.sign-up button {
+   border: none;
+   outline: none;
+   background-color: black;
+   color: white;
+   border: 1px solid blue;
+}
+
+.wronginput 
+{
+    color: red;
+    font-size: small;
+}
