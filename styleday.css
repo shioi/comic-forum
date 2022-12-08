@@ -1,0 +1,49 @@
+body {
+    background-color:rgb(255, 255, 255);
+}
+
+h2 {
+    background-color: #003366;
+    color: white;
+}
+
+.taste a {
+  color: #000000;
+}
+
+.nav-bar 
+{
+    background-color: #003366;
+}
+
+.nav-bar a {
+    color: #f2f2f2;
+}
+
+.nav-bar a:hover {
+    background-color: #2382e1;
+  }
+
+  .content{
+    border: 2px solid black;
+  }
+
+  .description>.title {
+    color: #333333;
+    
+  }
+
+  .description>.author{
+    color: #555555;
+  }
+
+  .tags>.tag-val {
+    background-color:  #999999;
+    color: white;
+  }
+
+  h1 {
+    color: salmon;
+  }
+
+  

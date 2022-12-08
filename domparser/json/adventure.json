@@ -1,0 +1,27 @@
+[
+        {
+            "Title": "Vinland Saga",
+            "Author": "Yukimura Makoto",
+            "coverimage": "vinlandsaga.jpg"
+        },
+        {
+            "Title": "Berserk",
+            "Author": "Kento Miura",
+            "coverimage": "berserk.jpg"
+        },
+        {
+            "Title": "Isekai Walking",
+            "Author": "Aruka Hito",
+            "coverimage": "isekaiwalking.jpg"
+        },
+        {
+            "Title": "Battle Angel Alita",
+            "Author": "Kishiro Yukito",
+            "coverimage": "alita.jpg"
+        },
+        {
+            "Title": "Girl's Last Toru",
+            "Author": "Tsukumizu",
+            "coverimage": "lasttour.jpg"
+        }
+]

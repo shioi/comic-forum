@@ -1,12 +1,7 @@
 body
 {
     margin: 45px;
-    background-color:black;
-}
-
-h2 {
-    background-color: #003366;
-    color: white;
+    
 }
 
 .logo-img {
@@ -17,22 +12,28 @@ h2 {
     width: 150px;
 }
 
+.taste {
+    display: flex;
+    justify-content: right;
+}
+
+.taste>a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .nav-bar {
-    background-color: #003366;
+
     padding: 20px;
     margin: 50px;
 }
 
 .nav-bar a {
-  color: #f2f2f2;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
   font-size: 20px;
-}
-
-.nav-bar a:hover {
-  background-color: #2382e1;
 }
 
 .nav-bar input {
@@ -58,7 +59,7 @@ h2 {
     margin: 30px;
     padding: 20px;
     float: left;
-    border: 2px solid black;
+
     border-radius: 8px;
 }
 
@@ -69,20 +70,18 @@ h2 {
 
 .description>.title
 {
-    color: #333333;
-    font-size: 30px;
+        font-size: 30px;
     font-weight: bold;
     display: block;
 }
 
 .description>.author{
-    color: #555555;
+    
     font-size: 20px;
 }
 
 .tags>.tag-val {
-    background-color:  #999999;
-    color: white;
+    
     font-size:15px;
 }
 
@@ -100,7 +99,7 @@ h2 {
 
 h1 {
     font-size: 3rem;
-    color: salmon;
+
     text-align: center;
 }
 
