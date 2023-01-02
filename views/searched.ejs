@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link href="stylenight.css" rel="stylesheet" id="thememodes" />
+    <title>Comiclist</title>
+</head>
+
+<body>
+    <img class="logo-img" alt="Logo" src="./images/log.png" />
+    <h1>Comic Shrine</h1>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="comiclist.html">Directory</a>
+        <a href="">Lists</a>
+        <a href="images.html">Images</a>
+        <a href="forum.html">Forums</a>
+        <a href="login.html" id="login ">Login</a>
+        <a href="domparser/xmlmanipulate.html">Wishlist</a>
+        <a href="xmls/comics_action.xml">List</a>
+        <input type="search" id="search">
+        <a href="#">|</a>
+        <a href="#" onclick="setnight()">night</a>
+        <a href="#" onclick="setday()">day</a>
+    </div>
+    <h2> Searches</h2>
+    <hr>
+    <% if (data.length> 0) { %>
+        <% data.forEach(comic=> { %>
+            <h3>
+                <%=comic.Title%>
+            </h3>
+            <p>
+                <%=comic.Author%>
+            </p>
+            <% }) %>
+                <% } else { %>
+                    <p>Nothing found :(</p>
+                    <%}%>
+</body>
+
+</html>

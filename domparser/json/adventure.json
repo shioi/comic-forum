@@ -23,5 +23,15 @@
             "Title": "Girl's Last Toru",
             "Author": "Tsukumizu",
             "coverimage": "lasttour.jpg"
+        },
+        {
+            "Title": "Vagabond",
+            "Author": "Takahashi Inou",
+            "coverimage": "vagabond.jpg"
+        },
+        {
+            "Title": "One piece",
+            "Author": "Eiichiro Oda",
+            "coverimage": "onepiece.jpg"
         }
 ]

@@ -1,12 +1,12 @@
 
 function setnight(){
     document.getElementById("thememodes").href = "stylenight.css";
-    setCookie("setnight()");
+    setCookie("theme=setnight()");
 }
 
 function setday(){
     document.getElementById("thememodes").href = "styleday.css";
-    setCookie("setday()");
+    setCookie("theme=setday()");
 }
 
 //getting json
@@ -80,20 +80,29 @@ function setsol() {
 function setCookie(val) {
     document.cookie = val+"; expires=23 Dec 2022 12:00:00 UTC path=/";
     var cookies = document.cookie.split(';');
-    console.log(cookies);
 }
 
 function getCookie() {
     var cookies = document.cookie.split(';');
-    eval(cookies[5]);
-    eval(cookies[4].split("=")[1]);
+    //eval(cookies[1].split("=")[1]);
+
+    console.log(cookies.length);
+
+  for(let i=0;i<cookies.length;i++){
     console.log(cookies);
+        if(cookies[i].includes("theme")){
+            eval(cookies[i].split("=")[1]);
+        }
+        else if(cookies[i].includes("taste")){
+            eval(cookies[i].split("=")[1]);
+        }
+    }
+    
 }
 
 function setTasteCookie(val) {
     document.cookie = "taste="+val+"; expires=25 Dec 2022 12:00:00 UTC path=/";
     var cookies = document.cookie.split(';');
-    console.log(cookies);
 }
 
 getCookie();
@@ -110,7 +119,7 @@ function showfavourites() {
 }
 
 function storeread() {
-    sessionStorage.setItem(this.id,sessionStorage.length-1);
+    sessionStorage.setItem(thgeis.id,sessionStorage.length-1);
     total_number_session++;
 }
 

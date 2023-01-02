@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
-    <link href="stylenight.css" rel="stylesheet" id="thememodes"/>
-    <title>Comiclist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="stylenight.css" rel="stylesheet" id="thememodes" />
+    <title>Comic Shrine</title>
 </head>
+
 <body>
-    <img class = "logo-img" alt="Logo" src="./images/log.png"/>
+    <img class="logo-img" alt="Logo" src="./images/log.png" />
     <h1>Comic Shrine</h1>
     <div class="taste">
         <a href="#" onclick="setadventure()">adventure</a>
@@ -15,24 +17,28 @@
         <a href="#" onclick="setsol()">SOL</a>
     </div>
     <div class="nav-bar">
-	<a href="">Added</a>
-	<a href="favourites.html">Favourites</a>
-	<a href="">Lists</a>
-	<a href="images.html">Images</a>
-	<a href="forum.html">Forums</a>
-	<a href="login.html" id="login ">Login</a>
-	<a href = "domparser/xmlmanipulate.html">Wishlist</a>
-	<a href = "xmls/comics_action.xml">List</a>
-	<input type="search" id="search">
-	<a href="#">|</a>
-	<a href="#" onclick="setnight()">night</a>
-	<a href="#" onclick="setday()">day</a>
+        <a href="">Added</a>
+        <a href="favourites.html">Favourites</a>
+        <a href="">Lists</a>
+        <a href="images.html">Images</a>
+        <a href="forum.html">Forums</a>
+        <a href="login.html" id="login ">Login</a>
+        <a href="domparser/xmlmanipulate.html">Wishlist</a>
+        <a href="xmls/comics_action.xml">List</a>
+        <form action="/index.html" method="POST">
+            <input type="search" id="search" name="searchedname">
+            <input type="submit" value="search" />
+        </form>
+        <a href="#">|</a>
+        <a href="#" onclick="setnight()">night</a>
+        <a href="#" onclick="setday()">day</a>
     </div>
     <h2> Popular Titles</h2>
     <hr>
     <div class="side"></div>
-   <script src="script.js"></script> 
+    <script src="script.js"></script>
 
-   <button onclick="showfavourites()">show favs</button>
+    <button onclick="showfavourites()">show favs</button>
 </body>
+
 </html>
