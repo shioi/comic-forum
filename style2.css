@@ -1,11 +1,11 @@
 .log-in {
-    padding: 20px;
-    border: 1.5px solid black;
-    border-radius: 6px;
-    width: 800px;
-    margin: 50px;
-    margin-left: 500px;
- }
+  padding: 20px;
+  border: 1.5px solid black;
+  border-radius: 6px;
+  width: 800px;
+  margin: 50px;
+  margin-left: 500px;
+}
 
 
 
@@ -16,16 +16,17 @@ div {
 }
 
 legend {
-    margin: 10px;
-    padding: 4px 20px;
-    border-color: #ccc;
+  margin: 10px;
+  padding: 4px 20px;
+  border-color: #ccc;
 }
 
 input[type=text] {
-    padding: 10px;
+  padding: 10px;
 }
 
-input[type=submit], button{
+input[type=submit],
+button {
   background-color: #001166;
   color: white;
   padding: 12px 20px;
@@ -41,4 +42,8 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+}
+
+h3 {
+  color: white;
 }

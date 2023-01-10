@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
-            <h1>Comic Shrine</h1>
+        <h1>Comic Shrine</h1>
         <h3>geek about your comic</h3>
     </div>
 
     <div class="main">
-        <div class="main-header">            
+        <div class="main-header">
             <h3>Sign Up</h3>
             <p>Existing user?
-                <span><a href="../login.html">Sign in</a></span></p>
+                <span><a href="../login.html">Sign in</a></span>
+            </p>
         </div>
         <div class="main-form">
-            <form action="../index.html">
+            <form action="/index" method="POST">
                 <label for="uname">Username</label>
-                <input type="text" id="uname" oninput="checkuname()" required> <br>
+                <input type="text" id="uname" oninput="checkuname()" required name="username"> <br>
                 <p id="wrongname" class="wronginput"></p>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" oninput="checkmail()" required><br>
+                <label for="email" name="email">E-mail</label>
+                <input type="email" id="email" name="email" oninput="checkmail()" required><br>
                 <p id="wrongmail"></p>
-                <label for="pass">Password</label>
-                <input type="password" id="pass" oninput="checkpassword()" required><br>
-                <label for="showpass">Show Password</label>    
-                    <input type="checkbox" onclick="showpassword()" required>
+                <label for="pass" password="password">Password</label>
+                <input type="password" name="password" id="pass" oninput="checkpassword()" required><br>
+                <label for="showpass">Show Password</label>
+                <input type="checkbox" onclick="showpassword()" required>
                 <br>
                 <p id="passwrong"></p>
-                <label for="phno" >Phone Number</label>
-                <input type="tel" id="phno" oninput="checkphnumber()"><br>
+                <label for="phno">Phone Number</label>
+                <input type="tel" id="phno" name="phonenumber" oninput="checkphnumber()"><br>
                 <p id="wrongnumber" class="wronginput"></p>
-              
+                <button>SUBMIT</button>
             </form>
         </div>
-            <div class="sign-up">
-            <a href="../index.html">
-                <button type="button" onclick="return validated()">
-                    submit
-                </button>
-            </a>
-        </div>
+
     </div>
     <script src="validation.js"></script>
 </body>
+
 </html>

@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <link href="style.css" rel="stylesheet"/>
-    <link href="style2.css" rel="stylesheet"/>
-    <link href="reg/style.css" rel="stylesheet"/>
-    <title>Document</title>
-  </head>
-  <body>
 
-    <div class="nav-bar">
-      <a href="">Added</a>
-      <a href="directory.html">Directory</a>
-      <a href="">Lists</a>
-      <a href="images.html">Images</a>
-      <a href="">Forums</a>
-      <a href="login.html" id="login ">Login</a>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="style2.css" rel="stylesheet" />
+  <link href="reg/style.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
 
-    <div class="main">
-      <form action="index.html">
-	<legend>Login to your Account</legend>
-	<hr>
-	<br>
-	<label for="fname">Username</label>
-	<input type="text" id="fname" name="UserName" placeholder="Username">
-	<br>
-	<br>
+<body>
 
-	<label for="lname">Password</label>
-	<input type="text" id="pass" name="password">
-	<a href="reg/registration.html">
-	  <button type="button">Create an Account?</button>
-	</a>
-	<button type="submit" value="Sign-in" onclick="setcookie()">Sign in</button>
+  <div class="nav-bar">
+    <a href="./index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="">Lists</a>
+    <a href="images.html">Images</a>
+    <a href="">Forums</a>
+    <a href="login.html" id="login ">Login</a>
+  </div>
 
-      </form>
-    </div>
-    <script src = "cookies.js"></script>
-  </body>
+  <div class="main">
+    <form action="/login" , method="POST">
+      <legend>Login to your Account</legend>
+      <hr>
+      <br>
+      <label for="fname">Username</label>
+      <input type="text" id="fname" name="name" placeholder="Username">
+      <br>
+      <br>
+
+      <label for="lname">Password</label>
+      <input type="text" id="pass" name="password">
+      <a href="reg/registration.html">
+        <button type="button">Create an Account?</button>
+      </a>
+      <button type="submit">Sign in</button>
+
+    </form>
+  </div>
+  <script src="cookies.js"></script>
+</body>
+
 </html>
-

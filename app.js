@@ -1,10 +1,12 @@
 const fs = require('fs');
 const express = require('express')
-
+const mysqlconnection = require('./mysqlconnection');
 const app = express();
-
+const mysql = require("mysql");
 app.use(express.static(__dirname))
+app.use(express.static(__dirname + '/public'))
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -40,7 +42,7 @@ app.post('/index.html', (req, res) => {
                     firstValue = true;
                     writeData += '['
                 }
-                dta = jsondata[index];
+                let dta = jsondata[index];
                 console.log(dta);
                 writeData += JSON.stringify(dta) + ','
             }
@@ -57,4 +59,74 @@ app.post('/index.html', (req, res) => {
 
 })
 
-app.listen(3000)
+
+app.get('/login', (req, res) => {
+    res.sendFile('./login.html', { root: __dirname });
+})
+
+app.post('/login', (req, res) => {
+    data = req.body;
+    console.log(data.name, data.password)
+    let matched = false
+    mysqlconnection.connection.query('SELECT * from User',
+        (err, rows) => {
+            if (err) throw err;
+            for (let i = 0; i < rows.length; i++) {
+                console.log(rows[i])
+                if (data.name == rows[i].name && data.password == rows[i].password) {
+                    matched = true;
+                    break;
+                }
+            }
+            if (matched) {
+                console.log("ist matched")
+                res.render('accountpage', { account: data })
+            }
+            else {
+                console.log("not matched")
+                res.redirect('/login')
+            }
+        })
+})
+
+app.post('/index', (req, res) => {
+    console.log(req.body)
+    mysqlconnection.addRow(req.body)
+    res.redirect('/login')
+})
+
+app.listen(3000, () => {
+    console.log('server if running at port 30000')
+})
+
+app.delete('/account/:id', (req, res) => {
+    const id = req.params.id;
+    mysqlconnection.connection.query("SET FOREIGN_KEY_CHECKS=0");
+    const deleteQuery = `DELETE FROM User where name="${id}"`;
+    console.log(deleteQuery);
+    mysqlconnection.connection.query(deleteQuery, (err, response) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        // rows deleted
+        res.json({ redirect: '/login' })
+    });
+})
+
+app.get('/account/:id', (req, res) => {
+    const id = req.params.id;
+    mysqlconnection.connection.query("SET FOREIGN_KEY_CHECKS=0");
+    const deleteQuery = `DELETE FROM User where name="${id}"`;
+    console.log(deleteQuery);
+    mysqlconnection.connection.query(deleteQuery, (err, response) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        // rows deleted
+        res.json({ redirect: '/login' })
+    });
+})
+
+app.post('/updatepass')

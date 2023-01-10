@@ -1,54 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <link href="style.css" rel="stylesheet"/>
 
-    <title>Forum</title>
-  </head>
-  <body>
-        <div class="nav-bar">
-	<a href="index.html">Home</a>
-	<a href="directory.html">Directory</a>
-	<a href="">Lists</a>
-	<a href="images.html">Images</a>
-	<a href="forum.html">Forums</a>
-	<a href="login.html" id="login ">Login</a>
-	<input type="text" value="Search">
-	</div>
+<head>
+  <meta charset="UTF-8" />
+  <link href="style.css" rel="stylesheet" />
 
-  	<h1 id="Heading">Forum</h1>
-  
-	<canvas id="myCanvas" width="500" height="100" />
-</canvas>
+  <title>Forum</title>
+</head>
 
-<button onClick="getLocation()"> Find your current location </button>
-<span> <strong>Your Location</strong> </span>
-<p id="demo"> </p>
+<body>
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="">Lists</a>
+    <a href="images.html">Images</a>
+    <a href="forum.html">Forums</a>
+    <a href="login.html" id="login ">Login</a>
+    <input type="text" value="Search">
+  </div>
 
-<script>
- var c = document.getElementById("myCanvas");
- var ctx = c.getContext("2d");
- ctx.font = "30px Arial";
- ctx.fillText("Welcome To Forum", 10, 50);
- 
-  //location
-const x = document.getElementById("demo");
+  <h1 id="Heading">Forum</h1>
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+</body>
 
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
-  </body>
 </html>
-

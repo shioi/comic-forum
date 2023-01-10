@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link href="stylenight.css" rel="stylesheet" id="thememodes" />
+    <title>Comiclist</title>
+</head>
+
+<body>
+    <img class="logo-img" alt="Logo" src="./images/log.png" />
+    <h1>Comic Shrine</h1>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="comiclist.html">Directory</a>
+        <a href="">Lists</a>
+        <a href="images.html">Images</a>
+        <a href="forum.html">Forums</a>
+        <a href="login.html" id="login ">Login</a>
+        <a href="domparser/xmlmanipulate.html">Wishlist</a>
+        <a href="xmls/comics_action.xml">List</a>
+        <input type="search" id="search">
+        <a href="#">|</a>
+        <a href="#" onclick="setnight()">night</a>
+        <a href="#" onclick="setday()">day</a>
+    </div>
+    <div class="account-page">
+        <h2>ACCOUNT PAGE</h2>
+        <br>
+        <h3 id="account-name">Name:
+            <%=account.name%>
+        </h3>
+    </div>
+    <div class="delete-acccount">
+        <a href="#" class="delete-button" data-doc="<%=account.name%>">Delete Account</a>
+    </div>
+
+    <div class="update-account">
+        <a href="#" class="update-button" data-doc="<%=account.name%>">Update Password</a>
+    </div>
+
+    <script>
+        const delete_button = document.querySelector('a.delete-button');
+        delete_button.addEventListener('click', (e) => {
+            const endpoint = '/account/' + delete_button.dataset.doc;
+            console.log(endpoint)
+            fetch(endpoint, {
+                method: 'DELETE'
+            })
+                .then((response) => response.json())
+                .then((data) => window.location.href = data.redirect)
+                .catch(err => console.log(errEXS))
+        })
+
+        const update_account = document.querySelector('a.update-button');
+        update_account.addEventListener('click', (e) => {
+            const endpoint = '/update/' + update_button.dataset.doc;
+            console.log(endpoint)
+            fetch(endpoint, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => window.location.href = data.redirect)
+                .catch(err => console.log(errEXS))
+        })
+    </script>
+</body>
+
+</html>

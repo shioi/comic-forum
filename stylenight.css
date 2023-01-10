@@ -1,54 +1,69 @@
 body {
-    background-color:rgb(34, 34, 34);
+  background-color: rgb(34, 34, 34);
 }
 
 h2 {
-    
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    color: white;
+
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 
 .taste a {
   color: rgb(120, 115, 115);
 }
 
-.nav-bar 
-{
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-    
+.nav-bar {
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
 }
 
 .nav-bar a {
-    color: rgb(120, 115, 115);
-    
+  color: rgb(120, 115, 115);
+
 }
 
 
 .nav-bar a:hover {
-    color: rgb(245, 245, 245);
-    font-weight: 300;
-  }
+  color: rgb(245, 245, 245);
+  font-weight: 300;
+}
 
-  .content{
-    border: 2px solid black;
-  }
+.content {
+  border: 2px solid black;
+}
 
-  .description>.title {
-    color: #333333;
-    
-  }
+.description>.title {
+  color: #333333;
 
-  .description>.author{
-    color: #555555;
-  }
+}
 
-  .tags>.tag-val {
-    background-color:  #999999;
-    color: white;
-  }
+.description>.author {
+  color: #555555;
+}
 
-  h1 {
-    color: salmon;
-  }
+.tags>.tag-val {
+  background-color: #999999;
+  color: white;
+}
 
-  
+h1 {
+  color: salmon;
+}
+
+a.delete-button,
+a.update-button {
+  display: block;
+  width: 150px;
+  background: #4E9CAF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 20px;
+}
